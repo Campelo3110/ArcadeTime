@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+@font-face {
+    font-family: "Arcade";
+    src: url("/font/ArcadeClassic-ov2x.ttf") format("truetype");
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: #fff;
-}
-
-@font-face {
-    font-family: "Arcade";
-    src: url("/font/ArcadeClassic-ov2x.ttf") format("truetype");
 }
 
 .titulo {
@@ -24,8 +28,8 @@
     top: 0;
     left: 0;
     z-index: -1;  
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
 }
 
@@ -46,6 +50,7 @@
 }
 
 .conteudo {
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para contraste */
     padding: 15px;
     border-radius: 12px;
@@ -64,6 +69,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de igual largura */
     gap: 20px; /* Espaçamento entre os itens */
+}
+
+.conteudo h2 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo p {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .conteudo img {
