@@ -33,6 +33,10 @@
     background-color: black;
 }
 
+#cannon {
+    z-index: 999;
+}
+
 .titulo {
     padding: 30px;
     text-align: center;
@@ -50,7 +54,6 @@
 }
 
 .conteudo {
-    gap: 10px;
     background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para contraste */
     padding: 15px;
     border-radius: 12px;
@@ -75,12 +78,14 @@
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 10px;
 }
 
 .conteudo p {
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 10px;
 }
 
 .conteudo img {
