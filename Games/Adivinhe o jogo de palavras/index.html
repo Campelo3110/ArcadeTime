@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adivinhe a Palavra</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Adivinhe a Palavra</h1>
+        <div class="content">
+            <input type="text" class="type-input" maxlength="1">
+            <div class="word"></div>
+            <div class="info">
+                <p class="guess">Adivinhações: <span></span></p>
+                <p class="wrong">Erros: <span></span></p>
+                <p class="hint">Dica: <span></span></p>
+            </div>
+            <div class="buttons">
+                <button class="reset">Reiniciar o jogo</button>
+                <button class="showhint">Mostrar dica</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/words-db.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

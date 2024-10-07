@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Arcade";
+    src: url("/font/ArcadeClassic-ov2x.ttf") format("truetype");
+}
+
+body {
+    background: radial-gradient(circle, #000, #000 60%, #111);
+    overflow: hidden;
+}
+
+
+.titulo {
+    font-family: "Arcade";
+    padding: 30px;
+    text-align: center;
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    font-size: 4rem; /* Tamanho maior para chamar mais atenção */
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;  
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.titulo {
+    padding: 30px;
+    text-align: center;
+}
+
+.container__grid {
+    margin: 20px;
+    text-align: center;
+}
+
+.conteudo {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para contraste */
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(255, 0, 255, 0.5); /* Borda suavizada */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conteudo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: none; /* Remover borda pesada */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de igual largura */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.conteudo img {
+    width: 100%;
+    height: auto;
+}
+
+.conteudo img:hover {
+    content: url("/gif/cobra.gif"); /* Substituir pela animação */
+}
+
+.conteudo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 40px rgba(255, 0, 255, 0.8);
+}
+
+button {
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FF00FF;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #00FF00;
+    border-color: #00FF00;
+    box-shadow: 0 0 15px #00FF00;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+    .titulo {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas ainda menores */
+    }
+    .titulo {
+        font-size: 2rem;
+    }
+}
+
