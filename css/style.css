@@ -10,12 +10,6 @@
     src: url("/font/ArcadeClassic-ov2x.ttf") format("truetype");
 }
 
-body {
-    background: radial-gradient(circle, #000, #000 60%, #111);
-    overflow: hidden;
-}
-
-
 .titulo {
     font-family: "Arcade";
     padding: 30px;
@@ -40,6 +34,12 @@ body {
     text-align: center;
 }
 
+.container {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
 .container__grid {
     margin: 20px;
     text-align: center;
@@ -50,7 +50,6 @@ body {
     padding: 15px;
     border-radius: 12px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid rgba(255, 0, 255, 0.5); /* Borda suavizada */
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -59,13 +58,6 @@ body {
 .conteudo:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0, 255, 0, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
-}
-
-.container {
-    margin: 20px;
-    padding: 20px;
-    border: none; /* Remover borda pesada */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
 }
 
 .grid {
@@ -79,7 +71,7 @@ body {
     height: auto;
 }
 
-.conteudo img:hover {
+.conteudo1:hover img{
     content: url("/gif/cobra.gif"); /* Substituir pela animação */
 }
 
