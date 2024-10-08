@@ -97,6 +97,10 @@
     content: url("/gif/cobra.gif"); /* Substituir pela animação */
 }
 
+.conteudo2:hover img{
+    content: url("/gif/campo-minado.gif"); /* Substituir pela animação */
+}
+
 .conteudo:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 40px rgba(255, 0, 255, 0.8);
