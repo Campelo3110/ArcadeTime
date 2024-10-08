@@ -9,57 +9,66 @@
 </head>
 
 <body>
-    <div class="titulo">
+    <header class="titulo">
         <h1>Arcade Time</h1>
-    </div>
+    </header>
     <main>
         <div class="container">
             <div class="container__grid">
+                <!-- Grid dos jogos -->
                 <div class="grid">
-                    <div class="conteudo1 conteudo">
-                        <img src="img/snake.webp" alt="">
+                    <!-- Card Snake Arcade -->
+                    <div class="conteudo conteudo1">
+                        <img src="img/snake.webp" alt="Snake Arcade">
                         <h2>Snake Arcade</h2>
                         <p>O Snake Arcade é um jogo clássico onde o jogador controla uma serpente que cresce ao coletar alimentos, evitando colisões com paredes e com seu próprio corpo. É simples e viciante!</p>
-                        <button onclick="irparacobra()">Jogar</button>
+                        <button class="jogar-btn" onclick="irparacobra()">Jogar</button>
                     </div>
 
-                    <div class="conteudo2 conteudo">
-                        <img src="img/minado.png" alt="">
+                    <!-- Card Campo Minado -->
+                    <div class="conteudo conteudo2">
+                        <img src="img/minado.png" alt="Campo Minado">
                         <h2>Campo Minado</h2>
                         <p>Campo Minado é um jogo de estratégia em que o jogador abre quadrados para evitar minas escondidas. Números indicam a quantidade de minas próximas, ajudando a deduzir onde estão sem ativá-las.</p>
-                        <button onclick="irparaminado()">Jogar</button>
+                        <button class="jogar-btn" onclick="irparaminado()">Jogar</button>
                     </div>
 
-                    <div class="conteudo3 conteudo">
-                        <img src="" alt="">
-                        <h2>33</h2>
-                        <p>3333333333</p>
-                        <button>Jogar</button>
+                    <!-- Card Jogo da Velha -->
+                    <div class="conteudo conteudo3">
+                        <img src="img/image.png" alt="Jogo da Velha">
+                        <h2>Jogo da Velha</h2>
+                        <p>O Jogo da Velha é um jogo simples de estratégia onde dois jogadores tentam alinhar três marcas iguais, X ou O, em uma grade de 3x3. O primeiro a conseguir vence a partida!</p>
+                        <button class="jogar-btn" onclick="irparavelha()">Jogar</button>
                     </div>
 
-                    <div class="conteudo4 conteudo">
-                        <img src="" alt="">
-                        <h2>4</h2>
-                        <p>444444444</p>
-                        <button>Jogar</button>
-                    </div>
-
-                    <div class="conteudo5 conteudo">
+                    <!-- Card de Placeholder -->
+                    <div class="conteudo conteudo4">
                         <img src="" alt="">
                         <h2>4</h2>
                         <p>444444444</p>
-                        <button>Jogar</button>
+                        <button class="jogar-btn">Jogar</button>
+                    </div>
+
+                    <!-- Outro Card de Placeholder -->
+                    <div class="conteudo conteudo5">
+                        <img src="" alt="">
+                        <h2>4</h2>
+                        <p>444444444</p>
+                        <button class="jogar-btn">Jogar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <div class="space">
-    <img id="cannon" src="img/nave.png" style="display: none;">
-    <img id="invader" src="img/invader.png" style="display: none;">
-    <canvas id="canvas">
-</div>
 
+    <!-- Canvas e Imagens Ocultas -->
+    <div class="space">
+        <canvas id="canvas"></canvas>
+        <img id="cannon" src="img/nave.png" style="display: none;">
+        <img id="invader" src="img/invader.png" style="display: none;">
+    </div>
+
+    <!-- Scripts -->
     <script src="js/space.js"></script>
     <script src="js/index.js"></script>
 </body>

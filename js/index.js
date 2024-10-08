@@ -5,3 +5,7 @@ function irparacobra() {
 function irparaminado() {
     window.location.href = "/games/minado/index.html";
 }
+
+function irparavelha() {
+    window.location.href = "/games/velha/index.html";
+}

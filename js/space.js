@@ -2,11 +2,13 @@ let interval
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
 
+// Função para redimensionar o canvas conforme a tela
 function resizeCanvas() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 }
 
+// Recarregar o canvas ao carregar a página e redimensionar a tela
 window.onload = () => {
     resizeCanvas()
     start()
@@ -77,11 +79,11 @@ let cannonWidth, cannonHeight, invaderWidth, invaderHeight
 function init() {
     const img = document.getElementById("invader")
 
-    // Definindo tamanhos fixos em pixels
-    cannonWidth = 20  // Largura do canhão
-    cannonHeight = 20 // Altura do canhão
-    invaderWidth = 20 // Largura do invasor
-    invaderHeight = 20 // Altura do invasor
+    // Usar porcentagem para o tamanho do canhão para que acompanhe o canvas
+    cannonWidth = 20
+    cannonHeight = 20
+    invaderWidth = 20
+    invaderHeight = 20
 
     // Posição inicial do canhão
     const cannon = new GameObject(
@@ -123,7 +125,7 @@ function draw(cannon) {
 // Mover os objetos
 function move(cannon) {
     invaders.forEach(inv => {
-        inv.move(0, 1   )  // Move os invasores para baixo verticalmente
+        inv.move(0, 1)  // Move os invasores para baixo verticalmente
         if (inv.y > canvas.height) {
             // Se o invasor sair da tela, reposicioná-lo no topo com uma nova posição aleatória
             inv.x = Math.random() * (canvas.width - invaderWidth)
@@ -154,13 +156,9 @@ function move(cannon) {
 
 // Verificar se o jogo acabou
 function isGameOver(cannon) {
-    // Derrota: Canhão foi atingido ou os invasores chegaram ao fundo
     const lost = cannon.isHitBy(invaderShot) || 
                  invaders.some(inv => inv.active && inv.y > canvas.height - cannonHeight - 20)
-
-    // Vitória: Todos os invasores foram destruídos
     const won = invaders.every(inv => !inv.active)
-
     return { lost, won }
 }
 
@@ -177,19 +175,10 @@ function game(cannon) {
     draw(cannon)
     
     const { lost, won } = isGameOver(cannon)
-
-    if (lost) {
+    if (lost || won) {
         clearInterval(interval)
-        restartGame() // Reinicia o jogo ao perder
-    } else if (won) {
-        clearInterval(interval)
-        restartGame() // Reinicia o jogo ao ganhar
+        restartGame()
     }
-}
-
-function restartGame() {
-    invaders = []  // Limpa os invasores antigos
-    start()        // Reinicia o jogo
 }
 
 // Iniciar o jogo
@@ -200,14 +189,13 @@ function start() {
     document.addEventListener("mousemove", function(e) {
         const mouseX = e.clientX
         const moveAmount = mouseX - cannonWidth / 2
-
         if (moveAmount >= 0 && moveAmount + cannonWidth <= canvas.width) {
             cannon.x = moveAmount
         }
     })
 
     // Atirar com clique
-    document.addEventListener("click", function(e) {
+    document.addEventListener("click", function() {
         if (!cannonShot) {
             cannonShot = cannon.fire(-30)
         }

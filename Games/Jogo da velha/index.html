@@ -6,12 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <title>Jogo da Velha</title>
 </head>
 
 <body>
-    <h1>Jogo da Velha</h1>
+    <header>
+        <div class="header-container">
+            <h1>Arcade Time</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Jogos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div id="container">
+        <h1>Jogo da Velha</h1>
         <div class="block">
             <div id="box1" class="box top left">
                 <span data-player="none" onclick="play(this)">&nbsp;</span>
@@ -47,6 +59,7 @@
         </div>
     </div>
 
+    <div class="estrelas"></div>
     <script src="js/index.js"></script>
 </body>
 

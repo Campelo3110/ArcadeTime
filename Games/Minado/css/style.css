@@ -11,13 +11,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    text-align: center;
-}
-
 /* Header */
 header {
     background-color: #000;
@@ -65,112 +58,65 @@ nav ul li a:hover {
     border-bottom: 2px solid #00FF00;
 }
 
-#container h1{
-    font-size: 1.5rem;
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* Estilo Principal */
+.minado{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
     font-family: 'Press Start 2P', sans-serif;
-    margin-bottom: 30px;
+    font-size: 14pt;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
-#container{
-    margin: 5% auto;
-    border-radius: 5px;
+#grid{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grid tr td{
+    border: 1px solid #fff;
+    background-color: #999;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    
 }
 
-.box{
-    display: inline-block;
-    border: 1px solid white;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0;
+#grid tr td.active{
+    background-color: #333;
 }
 
-span{
-    position: absolute;
-    font-size: 75px;
-    font-family: sans-serif;
-    text-align: center;
-    height: 75px;
-    width: 75px;
-    padding: 0;
-    margin: 5px;
-    margin-left: -35px;
+#grid tr td.mine{
+    background-color: #d84315;
 }
 
-.top{
-    border-top: none;
-}
-
-.bottom{
-    border-bottom: none;
-}
-
-.left{
-    border-left: none;
-}
-
-.right{
-    border-right: none;
-}
-
-.alert{
+button {
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 10px;
-    height: 60px;
-    width: 125px;
-    display: inline-block;
-    background: ghostwhite;
-    position: relative;
-    z-index: 10;
-    margin-top: -4%;
-    border-radius: 20px;
-    box-shadow: 0 0 75px 2px dimgray;
-    animation: larger 0.5s;
-    animation-fill-mode: forwards;
-    box-sizing: content-box;
-    padding: 30px;
-    
-    top: 0;
-    color: #000;
-}
-
-.alert b{
-    color: #000;
-}
-
-button{
-    color: #000;
-    font-weight: 100;
-    width: auto;
-    padding: 5px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FF00FF;
+    color: #FFF;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 10px;
 }
 
-button:hover{
+button:hover {
     color: #00FF00;
     border-color: #00FF00;
+    box-shadow: 0 0 15px #00FF00;
     transform: scale(1.1);
-}
-
-.activeBox{
-    background: silver;
-}
-
-@keyframes larger{
-    from{
-        height: 75px;
-        width: 125px;
-    }
-
-    to{
-        height: 90px;
-        width: 200px;
-    }
-
 }
 
 .estrelas {
