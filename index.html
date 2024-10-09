@@ -22,7 +22,7 @@
                         <img src="img/snake.webp" alt="Snake Arcade">
                         <h2>Snake Arcade</h2>
                         <p>O Snake Arcade é um jogo clássico onde o jogador controla uma serpente que cresce ao coletar alimentos, evitando colisões com paredes e com seu próprio corpo. É simples e viciante!</p>
-                        <button class="jogar-btn" onclick="irparacobra()">Jogar</button>
+                        <button class="jogar-btn" onclick="irParaCobra()">Jogar</button>
                     </div>
 
                     <!-- Card Campo Minado -->
@@ -30,31 +30,31 @@
                         <img src="img/minado.png" alt="Campo Minado">
                         <h2>Campo Minado</h2>
                         <p>Campo Minado é um jogo de estratégia em que o jogador abre quadrados para evitar minas escondidas. Números indicam a quantidade de minas próximas, ajudando a deduzir onde estão sem ativá-las.</p>
-                        <button class="jogar-btn" onclick="irparaminado()">Jogar</button>
+                        <button class="jogar-btn" onclick="irParaMinado()">Jogar</button>
                     </div>
 
                     <!-- Card Jogo da Velha -->
                     <div class="conteudo conteudo3">
-                        <img src="img/image.png" alt="Jogo da Velha">
+                        <img src="img/velha.png" alt="Jogo da Velha">
                         <h2>Jogo da Velha</h2>
                         <p>O Jogo da Velha é um jogo simples de estratégia onde dois jogadores tentam alinhar três marcas iguais, X ou O, em uma grade de 3x3. O primeiro a conseguir vence a partida!</p>
-                        <button class="jogar-btn" onclick="irparavelha()">Jogar</button>
+                        <button class="jogar-btn" onclick="irParaVelha()">Jogar</button>
                     </div>
 
                     <!-- Card de Placeholder -->
                     <div class="conteudo conteudo4">
-                        <img src="" alt="">
-                        <h2>4</h2>
-                        <p>444444444</p>
-                        <button class="jogar-btn">Jogar</button>
+                        <img src="img/quiz.png" alt="">
+                        <h2>O Quiz</h2>
+                        <p>Este quiz é um jogo interativo onde o jogador escolhe o tema, a quantidade de perguntas (até 10) e o nível de dificuldade. O objetivo é responder corretamente o maior número de perguntas possível dentro das configurações escolhidas.</p>
+                        <button class="jogar-btn" onclick="irParaQuiz()">Jogar</button>
                     </div>
 
                     <!-- Outro Card de Placeholder -->
                     <div class="conteudo conteudo5">
-                        <img src="" alt="">
-                        <h2>4</h2>
-                        <p>444444444</p>
-                        <button class="jogar-btn">Jogar</button>
+                        <img src="img/palavras.png" alt="">
+                        <h2>Descubra a Palavra</h2>
+                        <p>Descubra a Palavra é um jogo de adivinhação de palavras onde os jogadores têm várias tentativas para descobrir a palavra secreta, que pode ter diferentes tamanhos, recebendo dicas sobre letras corretas e suas posições.</p>
+                        <button class="jogar-btn" onclick="irParaPalavra()">Jogar</button>
                     </div>
                 </div>
             </div>
@@ -67,6 +67,8 @@
         <img id="cannon" src="img/nave.png" style="display: none;">
         <img id="invader" src="img/invader.png" style="display: none;">
     </div>
+    
+    <div class="estrelas"></div>    
 
     <!-- Scripts -->
     <script src="js/space.js"></script>
