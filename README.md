@@ -77,11 +77,14 @@ Este projeto é criado por [Guilherme Campelo](https://www.linkedin.com/in/guilh
 
 ## 📷 Screenshots  
 
+### Página Inicial
+![Pagina Princiapl](https://imgur.com/iBjgXEw.gif)
+
 ### Snake Arcade  
-![Snake Arcade Gameplay](link-para-o-gif-ou-imagem)  
+![Snake Arcade Gameplay](https://imgur.com/iXFsAGB.gif)  
 
 ### Campo Minado  
-![Campo Minado Gameplay](link-para-o-gif-ou-imagem)  
+![Campo Minado Gameplay](https://imgur.com/IVMvkeH.gif)  
 
 ---
 
