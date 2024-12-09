@@ -96,23 +96,23 @@ body {
 }
 
 .conteudo1:hover img {
-    content: url("/gif/cobra.gif"); /* Substituir pela animação */
+    content: url("/img/gif/cobra.gif"); 
 }
 
 .conteudo2:hover img {
-    content: url("/gif/campo-minado.gif"); /* Substituir pela animação */
+    content: url("/img/gif/campo-minado.gif"); 
 }
 
 .conteudo3:hover img {
-    content: url("/gif/velha.gif"); /* Substituir pela animação */
+    content: url("/img/gif/velha.gif"); 
 }
 
 .conteudo4:hover img {
-    content: url("/gif/quiz.gif"); /* Substituir pela animação */
+    content: url("/img/gif/quiz.gif");
 }
 
 .conteudo5:hover img {
-    content: url("/gif/palavra.gif"); /* Substituir pela animação */
+    content: url("/img/gif/palavra.gif");
 }
 
 button {
